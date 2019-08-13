@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TaskDetailMapTableViewCell" customModule="Challenge4All" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F3J-Ya-u17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="sRL-9Y-Qkf"/>
+                        </constraints>
+                    </mapView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjl-yk-bzu">
+                        <rect key="frame" x="0.0" y="80" width="320" height="19.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-Zb-U0D">
+                                <rect key="frame" x="8" y="2" width="266" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="jrd-Zb-U0D" firstAttribute="leading" secondItem="Hjl-yk-bzu" secondAttribute="leading" constant="8" id="UeP-LP-Rx7"/>
+                            <constraint firstAttribute="height" constant="19.5" id="ZVB-68-K3d"/>
+                            <constraint firstAttribute="trailing" secondItem="jrd-Zb-U0D" secondAttribute="trailing" constant="46" id="c9J-qC-5Hl"/>
+                            <constraint firstItem="jrd-Zb-U0D" firstAttribute="top" secondItem="Hjl-yk-bzu" secondAttribute="top" constant="2" id="sWC-pl-0TD"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ENDERECO" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-li-BfI">
+                        <rect key="frame" x="284" y="62" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="QAr-6K-rPW"/>
+                            <constraint firstAttribute="height" constant="30" id="wSr-sb-ne4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hjl-yk-bzu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="41k-lk-GX3"/>
+                    <constraint firstAttribute="trailing" secondItem="F3J-Ya-u17" secondAttribute="trailing" id="4e0-o0-rxC"/>
+                    <constraint firstItem="F3J-Ya-u17" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5c3-Ya-wuV"/>
+                    <constraint firstAttribute="bottom" secondItem="Hjl-yk-bzu" secondAttribute="bottom" id="D63-Mb-QaC"/>
+                    <constraint firstItem="Hjl-yk-bzu" firstAttribute="top" secondItem="F3J-Ya-u17" secondAttribute="bottom" id="FWf-pg-jIR"/>
+                    <constraint firstItem="F3J-Ya-u17" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GJ6-VY-90c"/>
+                    <constraint firstAttribute="trailing" secondItem="7AJ-li-BfI" secondAttribute="trailing" constant="6" id="QtY-Oy-3fU"/>
+                    <constraint firstItem="Hjl-yk-bzu" firstAttribute="top" secondItem="F3J-Ya-u17" secondAttribute="bottom" id="R1N-ob-nef"/>
+                    <constraint firstAttribute="bottom" secondItem="7AJ-li-BfI" secondAttribute="bottom" constant="7.5" id="jId-4l-scc"/>
+                    <constraint firstAttribute="trailing" secondItem="Hjl-yk-bzu" secondAttribute="trailing" id="jN5-EP-czg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageIcon" destination="7AJ-li-BfI" id="YyH-3H-72F"/>
+                <outlet property="labelAddress" destination="jrd-Zb-U0D" id="4L3-wO-I9a"/>
+                <outlet property="map" destination="F3J-Ya-u17" id="1gi-Se-AuZ"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ENDERECO" width="100" height="100"/>
+        <namedColor name="navColor">
+            <color red="0.87058823529411766" green="0.54117647058823526" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
